@@ -1,0 +1,13 @@
+{% extends '_base.html' %}
+
+{% block content %}
+
+<h2>Details about {{ recipe.name }}</h2>
+<h2>Cheff: {{ recipe.cheff}}</h2>
+<p>{{ recipe.ingredients }}</p>
+<p>{{ recipe.steps }}</p>
+<a href="{% url 'recipe_update' recipe.pk %}">🔄 Update the recipe</a>
+<a href="{% url 'recipe_delete' recipe.pk %}"> &#10060 Delete the recipe</a>
+
+{% endblock content %}
+

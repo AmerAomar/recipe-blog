@@ -1,0 +1,16 @@
+{% extends '_base.html' %}
+
+{% block content %}
+<h2>Recipes page</h2>
+<h3 style="color: rgb(18, 157, 13);">Recipes Number: {{ object_list|length }}</h3>
+<a href="{% url 'recipe_create' %}">+ New Recipe</a>
+<ul>
+  {% for recipe in object_list %}
+  <li>
+    <a href="{% url 'recipe_detail' recipe.pk %}">{{ recipe.name }}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+
+{% endblock content %}

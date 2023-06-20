@@ -1,7 +1,41 @@
 {% extends '_base.html' %}
+{% load static %}
 
-{% block title %}About page{% endblock %}
+{% block title %}About - Recipes Blog{% endblock title %}
 
 {% block content %}
-<h1>About page</h1>
+<section class="hero text-center">
+  <div class="hero-content">
+    <h1>Welcome to our Recipes Blog</h1>
+    <p class="lead">Discover and share delicious recipes</p>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="feature">
+          <i class="far fa-newspaper fa-3x"></i>
+          <h3 style="color: rgb(7, 116, 7);">Explore</h3>
+          <p>Find a variety of mouth-watering recipes shared by our community.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature">
+          <i class="far fa-edit fa-3x"></i>
+          <h3 style="color: rgb(7, 116, 7);">Create</h3>
+          <p>Share your own recipes and inspire others to try new flavors.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature">
+          <i class="far fa-comments fa-3x"></i>
+          <h3 style="color: rgb(7, 116, 7);">Connect</h3>
+          <p>Engage with fellow food enthusiasts through comments and discussions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock content %}
